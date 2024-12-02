@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{cmbright}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[sf]{libertine}
+\usepackage{microtype}
+\usepackage{paracol}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\hypersetup{colorlinks, urlcolor=black, linkcolor=black}
+
+% Geometry
+\geometry{hmargin=1.75cm, vmargin=1.25cm}
+\columnratio{0.65, 0.35}
+\setlength\columnsep{0.05\textwidth}
+\setlength\parindent{0pt}
+\setlength{\smallskipamount}{8pt plus 3pt minus 3pt}
+\setlength{\medskipamount}{16pt plus 6pt minus 6pt}
+\setlength{\bigskipamount}{24pt plus 8pt minus 8pt}
+
+% Style
+\pagestyle{empty}
+\titleformat{\section}{\scshape\LARGE\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{\bigskipamount}{\smallskipamount}
+\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+\newcommand{\entry}[4]{{{\textbf{#1}}} \hfill #3 \\ #2 \hfill #4}
+\newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
+
+\begin{document}
+
+%\vspace*{\fill}
+
+\begin{paracol}{2}
+
+% Name & headline
+\heading{Leonardo Bove}{Graduate Student in\\Electronics Engineering}
+
+\switchcolumn
+
+% Identity card
+\vspace{0.01\textheight}
+\begin{supertabular}{ll}
+  \footnotesize\faPhone & +39 338 449 0477 \\
+  \footnotesize\faEnvelope & \href{mailto:leonardo.bove01@gmail.com}{leonardo.bove01@gmail.com} \\
+  \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/leonardo-bove-86a1481b3/}{leonardobove} \\
+   \footnotesize\faGithub & \href{https://github.com/leonardobove}{leonardobove} \\
+\end{supertabular}
+
+\smallskip
+\switchcolumn*
+
+\section{education}
+
+\entry{University of Pisa}{MSc Electronics Engineering}{Pisa, Italy}{2023 -- ongoing}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Specialization: Embedded Systems \& Mecathronics
+  \item Projects:
+    \begin{itemize}
+        \item \textbf{Qubase}: superconductor qubit pulse sequencer, based on \textit{Xilinx RFSoC} FPGA, part of the \textit{QICK} project at Fermilab.
+        \item \textbf{Handwritten digit recognition} neural network, implemented on \textit{MAX10} Intel FPGA.
+    \end{itemize}
+\end{itemize}
+
+\smallskip
+
+\entry{University of Pisa}{BSc Electronics Engineering}{Pisa, Italy}{2020 -- 2023}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Thesis title: \textit{Dispersive Readout of  the Transmon Qubit}
+  \item Degree grade: 110/110 \textit{Cum Laude}
+\end{itemize}
+
+
+\switchcolumn
+
+\section{skills}
+\begin{supertabular}{rl}
+  \tableentry{\footnotesize\faCode}{Python \textperiodcentered{} C/C++ \textperiodcentered{} MATLAB}{}
+  \tableentry{}{Git \textperiodcentered{} Linux \textperiodcentered{} PSoC Creator}{}
+  \tableentry{}{Electronic CAD \textperiodcentered{} Spice \textperiodcentered{} ADS}{}
+  \tableentry{}{Quartus \textperiodcentered{} Modelsim \textperiodcentered{} Vivado}{}
+  \tableentry{}{}{}
+
+  \tableentry{\footnotesize\faBolt}{Electronics lab instrumentation}{}
+  \tableentry{}{Tin soldering \textperiodcentered{} PCB design}
+  {}
+  \tableentry{}{AVR/ARM embedded coding}{}
+  \tableentry{}{FPGA design \textperiodcentered{} 3D printing}{}
+  \tableentry{}{}{}
+
+  \tableentry{\footnotesize\faLanguage}{English \textperiodcentered{} proficient}{}
+  \tableentry{}{Italian \textperiodcentered{} native}{}
+  \tableentry{}{German \textperiodcentered{} intermediate}{}
+  \tableentry{}{French \textperiodcentered{} beginner}{}
+\end{supertabular}
+
+\switchcolumn*
+
+\section{experience}
+
+\entry{Chief Technology Officer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{2023 -- 2024}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Define and lead the work of the Electronics and AI \& Software Development divisions
+  \item Improve reliability and performance of the electric vehicle 
+\end{itemize}
+
+\smallskip
+
+\entry{Embedded Software Developer}{Sintonica s.r.l.}{Navacchio (PI), Italy}{Summer 2023}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Develop the driver firmware for TFT LCD displays for a custom embedded OS
+\end{itemize}
+
+\smallskip
+
+\entry{PCB Designer and Embedded System Developer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{2022 -- 2023}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Lead the development of the embedded software of the mounted PCB boards
+  \item Develop part of the Vehicle Control Unit software, based on the FreeRTOS real-time OS
+  \item Develop a bootloader via CAN bus, ARM and AVR compatible
+  \item Unit and integration testing of firmware
+\end{itemize}
+
+\switchcolumn
+
+\section{other interests}
+\begin{supertabular}{rl}
+  \tableentry{\footnotesize\faMusic}{Violin}{}
+\end{supertabular}
+
+\smallskip
+
+\section{awards}
+\begin{supertabular}{rl}
+  \tableentry{2014}{\textbf{Best student}}{}
+  \tableentry{}{Scolarship from \textit{Fondazione}}{}
+  \tableentry{}{\textit{Cantiere Internazionale}}{}
+  \tableentry{}{\textit{d'Arte di Montepulciano}}{spaceafter}
+\end{supertabular}
+
+\section{events}
+\begin{supertabular}{rl}
+  \tableentry{2024}{Formula Student Germany}{spaceafter}
+  \tableentry{2023}{Formula Student Germany}{spaceafter}
+\end{supertabular}
+
+\end{paracol}
+
+\vspace*{\fill}
+
+\end{document}
