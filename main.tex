@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 \usepackage[english]{babel}
 \usepackage{cmbright}
 \usepackage{enumitem}
@@ -14,7 +14,7 @@
 \hypersetup{colorlinks, urlcolor=black, linkcolor=black}
 
 % Geometry
-\geometry{hmargin=1.75cm, vmargin=1.25cm}
+\geometry{hmargin=1.75cm, vmargin=0.9cm}
 \columnratio{0.65, 0.35}
 \setlength\columnsep{0.05\textwidth}
 \setlength\parindent{0pt}
@@ -55,19 +55,20 @@
 
 \section{education}
 
-\entry{University of Pisa}{MSc Electronics Engineering}{Pisa, Italy}{2023 -- ongoing}
+\entry{MSc in Electronics Engineering}{University of Pisa}{Pisa, Italy}{2023 -- ongoing}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-  \item Specialization: Embedded Systems \& Mecathronics
+  \item Specialization: Embedded Systems \& Mechatronics
+  \item Thesis work: Design of the software and electronic system to control and characterize a superconducting qubit.
   \item Projects:
     \begin{itemize}
-        \item \textbf{Qubase}: superconductor qubit pulse sequencer, based on \textit{Xilinx RFSoC} FPGA, part of the \textit{QICK} project at Fermilab.
-        \item \textbf{Handwritten digit recognition} neural network, implemented on \textit{MAX10} Intel FPGA.
+        \item \textbf{\href{https://github.com/NQI-SQMS/QickUtils/tree/feat-qubase}{Qubase}}: superconducting qubit pulse sequencer, based on \textit{Xilinx RFSoC 4x2} FPGA, part of the \textit{QICK} project at Fermilab.
     \end{itemize}
+   \item Current GPA: 30/30
 \end{itemize}
 
 \smallskip
 
-\entry{University of Pisa}{BSc Electronics Engineering}{Pisa, Italy}{2020 -- 2023}
+\entry{BSc in Electronics Engineering}{University of Pisa}{Pisa, Italy}{2020 -- 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Thesis title: \textit{Dispersive Readout of  the Transmon Qubit}
   \item Degree grade: 110/110 \textit{Cum Laude}
@@ -82,19 +83,21 @@
   \tableentry{}{Git \textperiodcentered{} Linux \textperiodcentered{} PSoC Creator}{}
   \tableentry{}{Electronic CAD \textperiodcentered{} Spice \textperiodcentered{} ADS}{}
   \tableentry{}{Quartus \textperiodcentered{} Modelsim \textperiodcentered{} Vivado}{}
+  \tableentry{}{COMSOL Multiphysics}{}
+  \tableentry{}{Simulink Model-Based Design}{}
   \tableentry{}{}{}
 
   \tableentry{\footnotesize\faBolt}{Electronics lab instrumentation}{}
-  \tableentry{}{Tin soldering \textperiodcentered{} PCB design}
+  \tableentry{}{Tin soldering \textperiodcentered{} PCB design (KiCad)}
   {}
   \tableentry{}{AVR/ARM embedded coding}{}
   \tableentry{}{FPGA design \textperiodcentered{} 3D printing}{}
   \tableentry{}{}{}
-
-  \tableentry{\footnotesize\faLanguage}{English \textperiodcentered{} proficient}{}
-  \tableentry{}{Italian \textperiodcentered{} native}{}
-  \tableentry{}{German \textperiodcentered{} intermediate}{}
-  \tableentry{}{French \textperiodcentered{} beginner}{}
+  
+  \tableentry{\footnotesize\faLanguage}{Italian \textperiodcentered{} native}{}
+  \tableentry{}{English \textperiodcentered{} C2}{}
+  \tableentry{}{German \textperiodcentered{} B2}{}
+  \tableentry{}{French \textperiodcentered{} A2}{}
 \end{supertabular}
 
 \switchcolumn*
@@ -111,7 +114,7 @@
 
 \entry{Embedded Software Developer}{Sintonica s.r.l.}{Navacchio (PI), Italy}{Summer 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-  \item Develop the driver firmware for TFT LCD displays for a custom embedded OS
+  \item Develop the driver firmware for TFT LCD displays for a custom embedded OS on Infineon PSoC ARM microcontroller
 \end{itemize}
 
 \smallskip
@@ -148,6 +151,16 @@
 \end{supertabular}
 
 \end{paracol}
+
+\vspace*{-0.5cm}
+
+\section{projects}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+    \item \textbf{\href{https://github.com/leonardobove/spacefiber_pll}{SpaceFibre PLL}}: Model and ADS simulation of a SpaceFibre compatible 6.25GHz PLL, implemented using the SG25H4 0.25 \(\mu\)m SiGe BiCMOS technology from GlobalFoundries.
+    \item \textbf{\href{https://github.com/leonardobove/handwritten_digit_recognition}{Handwritten Digit Recognition}}: An handwritten digit recognition system based on a neural network implemented on Altera DE10-Lite board (Altera MAX10 10M50DAF484C7G FPGA)
+    \item \textbf{\href{https://github.com/leonardobove/dual_axis_accelerometer}{Dual Axis Accelerometer}}: COMSOL simulation of a dual-axis MEMS accelerometer with T-shape beams.
+    \item \textbf{\href{https://github.com/leonardobove/rubiks_cube_automatic_solver/tree/main}{Rubik's Cube Automatic Solver}}: A servo motor actuated Rubik cube solver robot, controlled by S32K144EVB. Developed using Simulink MBD
+\end{itemize}
 
 \vspace*{\fill}
 
