@@ -11,6 +11,7 @@
 \usepackage{paracol}
 \usepackage{supertabular}
 \usepackage{titlesec}
+\usepackage{enumitem}
 \hypersetup{colorlinks, urlcolor=black, linkcolor=black}
 
 % Geometry
@@ -51,108 +52,88 @@
 \end{supertabular}
 
 \smallskip
-\switchcolumn*
+\end{paracol}
 
 \section{education}
 
-\entry{MSc in Electronics Engineering}{University of Pisa}{Pisa, Italy}{2023 -- ongoing}
+\entry{MSc in Electronics Engineering}{University of Pisa}{Pisa, Italy}{Sep. 2023 -- present}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Specialization: Embedded Systems \& Mechatronics
-  \item Thesis work: Design of the software and electronic system to control and characterize a superconducting qubit.
+  \item Thesis work: Design of the software and electronic system to control and characterize a superconducting Transmon qubit.
   \item Projects:
     \begin{itemize}
-        \item \textbf{\href{https://github.com/NQI-SQMS/QickUtils/tree/feat-qubase}{Qubase}}: superconducting qubit pulse sequencer, based on \textit{Xilinx RFSoC 4x2} FPGA, part of the \textit{QICK} project at Fermilab.
+        \item \textbf{Qubase}: superconducting qubit pulse sequencer, based on \textit{Xilinx RFSoC 4x2} FPGA, part of the \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} project of the SQMS research group at Fermilab.
+    \end{itemize}
+   \item Attended Courses:
+    \begin{itemize}[noitemsep]
+        \item RF Circuit Design
+        \item Microelectronic Fabrication Technologies
+        \item Solid State Physics
+        \item Digital System Design
+        \item Embedded Systems
+        \item Sensor And Microsystem Design
+        \item Microelectronic System Design
     \end{itemize}
    \item Current GPA: 30/30
 \end{itemize}
 
 \smallskip
 
-\entry{BSc in Electronics Engineering}{University of Pisa}{Pisa, Italy}{2020 -- 2023}
+\entry{BSc in Electronics Engineering}{University of Pisa}{Pisa, Italy}{Sep. 2020 -- Jul. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Thesis title: \textit{Dispersive Readout of  the Transmon Qubit}
   \item Degree grade: 110/110 \textit{Cum Laude}
+
 \end{itemize}
-
-
-\switchcolumn
-
-\section{skills}
-\begin{supertabular}{rl}
-  \tableentry{\footnotesize\faCode}{Python \textperiodcentered{} C/C++ \textperiodcentered{} MATLAB}{}
-  \tableentry{}{Git \textperiodcentered{} Linux \textperiodcentered{} PSoC Creator}{}
-  \tableentry{}{Electronic CAD \textperiodcentered{} Spice \textperiodcentered{} ADS}{}
-  \tableentry{}{Quartus \textperiodcentered{} Modelsim \textperiodcentered{} Vivado}{}
-  \tableentry{}{COMSOL Multiphysics}{}
-  \tableentry{}{Simulink Model-Based Design}{}
-  \tableentry{}{}{}
-
-  \tableentry{\footnotesize\faBolt}{Electronics lab instrumentation}{}
-  \tableentry{}{Tin soldering \textperiodcentered{} PCB design (KiCad)}
-  {}
-  \tableentry{}{AVR/ARM embedded coding}{}
-  \tableentry{}{FPGA design \textperiodcentered{} 3D printing}{}
-  \tableentry{}{}{}
-  
-  \tableentry{\footnotesize\faLanguage}{Italian \textperiodcentered{} native}{}
-  \tableentry{}{English \textperiodcentered{} C2}{}
-  \tableentry{}{German \textperiodcentered{} B2}{}
-  \tableentry{}{French \textperiodcentered{} A2}{}
-\end{supertabular}
-
-\switchcolumn*
 
 \section{experience}
 
-\entry{Chief Technology Officer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{2023 -- 2024}
+\entry{Chief Technology Officer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{Sep. 2023 -- Sep. 2024}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-  \item Define and lead the work of the Electronics and AI \& Software Development divisions
-  \item Improve reliability and performance of the electric vehicle 
+    \item Define and lead the work of the Electronics and AI \& Software Development divisions
+    \item Improve reliability and performance of the electric vehicle 
 \end{itemize}
 
 \smallskip
 
-\entry{Embedded Software Developer}{Sintonica s.r.l.}{Navacchio (PI), Italy}{Summer 2023}
+\entry{Embedded Software Developer}{Sintonica s.r.l.}{Navacchio (PI), Italy}{May 2023 -- Sep. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-  \item Develop the driver firmware for TFT LCD displays for a custom embedded OS on Infineon PSoC ARM microcontroller
+    \item Develop the driver firmware for TFT LCD displays for a custom embedded OS on Infineon PSoC ARM microcontroller
+    \item Layout of the new release of the company's development kit PCB, based on Cypress and nRF PSoC.
 \end{itemize}
 
 \smallskip
 
-\entry{PCB Designer and Embedded System Developer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{2022 -- 2023}
+\entry{PCB Designer and Embedded System Developer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{Sep. 2022 -- Sep. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-  \item Lead the development of the embedded software of the mounted PCB boards
-  \item Develop part of the Vehicle Control Unit software, based on the FreeRTOS real-time OS
-  \item Develop a bootloader via CAN bus, ARM and AVR compatible
-  \item Unit and integration testing of firmware
+    \item Lead the development of the embedded software of the mounted PCB boards
+    \item Develop part of the Vehicle Control Unit software, based on the FreeRTOS real-time OS
+    \item Develop a bootloader via CAN bus, ARM and AVR compatible
+    \item Unit and integration testing of firmware
 \end{itemize}
 
-\switchcolumn
+\section{skills}
+\begin{tabular}{l l}
+    \textbf{Development Tools \& OS}& Git, Linux, Windows\\
+    \textbf{Programming Languages}& C/C++, Python, Verilog, VHDL, MATLAB, Bash, Assembly\\
+    \textbf{Quantum Computing Skills}& Superconducting qubit characterization, Qiskit, QuTip\\
+    \textbf{FPGA Design}& Vivado, Quartus, Modelsim\\
+    \textbf{Analog Circuit Design}& SPICE, ADS\\
+    \textbf{MEMS Design}& COMSOL Multiphysics\\
+    \textbf{PCB Design}& KiCad, Altium\\
+    \textbf{Microcontrollers Architectures}& AVR, ARM\\
+    \textbf{Microcontrollers Coding Platforms}& STM32CubeIDE, Microchip Studio, PSoC Creator, Simulink Model-Based Design\\
+    \textbf{Electronic Skills}& Electronics lab instrumentation, VNA, tin soldering\\
+    \textbf{CAD skills}& 3D printing, Autodesk Fusion 360
+\end{tabular}
 
-\section{other interests}
-\begin{supertabular}{rl}
-  \tableentry{\footnotesize\faMusic}{Violin}{}
-\end{supertabular}
-
-\smallskip
-
-\section{awards}
-\begin{supertabular}{rl}
-  \tableentry{2014}{\textbf{Best student}}{}
-  \tableentry{}{Scolarship from \textit{Fondazione}}{}
-  \tableentry{}{\textit{Cantiere Internazionale}}{}
-  \tableentry{}{\textit{d'Arte di Montepulciano}}{spaceafter}
-\end{supertabular}
-
-\section{events}
-\begin{supertabular}{rl}
-  \tableentry{2024}{Formula Student Germany}{spaceafter}
-  \tableentry{2023}{Formula Student Germany}{spaceafter}
-\end{supertabular}
-
-\end{paracol}
-
-\vspace*{-0.5cm}
+\section{languages}
+\begin{tabular}{l l}
+    \textbf{Italian}& Native speaker\\
+    \textbf{English}& C2 level\\
+    \textbf{German}& B2 level\\
+    \textbf{French}& A2 level
+\end{tabular}
 
 \section{projects}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
@@ -162,6 +143,11 @@
     \item \textbf{\href{https://github.com/leonardobove/rubiks_cube_automatic_solver/tree/main}{Rubik's Cube Automatic Solver}}: A servo motor actuated Rubik cube solver robot, controlled by S32K144EVB. Developed using Simulink MBD
 \end{itemize}
 
+\section{other skills}
+\begin{tabular}{l l}
+    \textbf{Driving license}& B license\\
+    \textbf{Music}& Violin\\
+\end{tabular}
 \vspace*{\fill}
 
 \end{document}
