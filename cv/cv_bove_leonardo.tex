@@ -1,12 +1,12 @@
 \documentclass[10pt]{article}
 \usepackage[english]{babel}
-\usepackage{cmbright}
+%\usepackage{cmbright}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{fontawesome5}
 \usepackage{geometry}
 \usepackage{hyperref}
-\usepackage[sf]{libertine}
+%\usepackage[sf]{libertine}
 \usepackage{microtype}
 \usepackage{paracol}
 \usepackage{supertabular}
@@ -27,7 +27,8 @@
 \pagestyle{empty}
 \titleformat{\section}{\scshape\LARGE\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{\bigskipamount}{\smallskipamount}
-\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+%\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+\newcommand{\heading}[2]{\centering{\Huge #1}\\\smallskip{\large{#2}}}
 \newcommand{\entry}[4]{{{\textbf{#1}}} \hfill #3 \\ #2 \hfill #4}
 \newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
 
@@ -71,6 +72,7 @@
         \item Microelectronic System Design
     \end{itemize}
    \item Degree grade: 110/110 with Honors
+   \item Overall GPA: 4.0/4.0
 \end{itemize}
 
 \smallskip
@@ -79,24 +81,40 @@
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Thesis title: \textit{Dispersive Readout of  the Transmon Qubit}
   \item Degree grade: 110/110 with Honors
+  \item Overall GPA: 4.0/4.0
 
 \end{itemize}
 
-\section{experience}
+\section{research experience}
+
+\entry{Quantum Characterization Graduate Researcher}{Department of Information Engineering, University of Pisa}{Pisa, Italy}{Sep. 2025 -- Present}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+    \item Characterization of multiple qubits using frequency multiplexing techniques.
+    \item Software and hardware management of the dilution refrigerator of the laboratory.
+    \item Microwave path engineering: sizing and selection of the components of the system; characterization of the system through RF instrumentation (VNA, spectrum analyzer).
+    \item FPGA development for control and readout purposes.
+    \item Setup of infrastructure for remote qubit characterization (\textit{JupyterLab server}).
+\end{itemize}
 
 \entry{Master Thesis Project}{SQMS, Fermilab}{Batavia, IL, USA}{May 2025 -- Jul. 2025}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-	\item Development of \textit{\href{https://github.com/leonardobove/qpcb}{QPCB}}, a custom pulse frequency up/down-conversion board.
-	\item Development of Qubase, a qubit pulse sequencer, that relies on the open-source \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} board, a Xilinx FPGA based real-time RF signal generator and readout system, developed at SQMS, Fermilab.
-	\item Application of Qubase in 2D and 3D superconducting qubit characterization and other advanced research purposes.  
+    \item Development of \textit{\href{https://github.com/leonardobove/qpcb}{QPCB}}, a custom pulse frequency up/down-conversion board. Microwave EM circuit analysis (\textit{ADS Keysight})
+    \item Development of Qubase, a high-level qubit pulse sequencer in Python, that relies on the open-source \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} board, a Xilinx FPGA based real-time RF signal generator and readout system, developed at SQMS, Fermilab.
+    \item Application of Qubase in 2D and 3D superconducting qubit characterization and other advanced research purposes.
+    \item Automation of the calibration process.
 \end{itemize}
 
-\smallskip
+\section{industry experience}
 
 \entry{Chief Technology Officer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{Sep. 2023 -- Sep. 2024}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Define and lead the work of the Electronics and AI \& Software Development divisions
-    \item Improve reliability and performance of the electric vehicle 
+    \item Lead the development of the EV (Electric Vehicle) car of the University of Pisa (\textit{Electronics \& Software Divisions}).
+    \item Final approval of projects.
+    \item Main high voltage battery manager.
+    \item Manager of the GitLab server of the Team.
+    \item CI automation manager; PR and issues reviewer.
+    \item Team building and teamwork promoter.
+    \item Management of people's activities and trips.
 \end{itemize}
 
 \smallskip
@@ -118,34 +136,75 @@
 \end{itemize}
 
 \section{skills}
-\begin{tabular}{l l}
-    \textbf{Development Tools \& OS}& Git, Linux, Windows\\
-    \textbf{Programming Languages}& C/C++, Python, Verilog, VHDL, MATLAB, Bash, Assembly\\
-    \textbf{Quantum Computing Skills}& Superconducting qubit characterization, Qiskit, QuTip\\
-    \textbf{FPGA Design}& Vivado, Quartus, Modelsim\\
-    \textbf{Analog Circuit Design}& SPICE, ADS\\
-    \textbf{MEMS Design}& COMSOL Multiphysics\\
-    \textbf{PCB Design}& KiCad, Altium\\
-    \textbf{Microcontrollers Architectures}& AVR, ARM\\
-    \textbf{Microcontrollers Coding Platforms}& STM32CubeIDE, Microchip Studio, PSoC Creator, Simulink Model-Based Design\\
-    \textbf{Electronic Skills}& Electronics lab instrumentation, VNA, tin soldering\\
-    \textbf{CAD skills}& 3D printing, Autodesk Fusion 360
-\end{tabular}
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Development Tools \& OS} \\
+    Git, Linux, Windows
+    \\[4pt]
+    \textbf{Programming Languages} \\
+    C/C++, Python, Verilog, VHDL, MATLAB, Bash, Assembly \\[4pt]
+    \textbf{Quantum Computing} \\
+    Superconducting qubit characterization, Qiskit, QuTiP \\[4pt]
+    \textbf{FPGA Design} \\
+    Vivado, Quartus, ModelSim
+    \\[4pt]
+    \textbf{Embedded Systems} \\
+    STM32CubeIDE, PSoC Creator, Simulink Model-Based Design
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Analog Design} \\
+    SPICE, ADS, KiCad, Altium
+    \\[4pt]
+    \textbf{MEMS Design \& Simulation} \\
+    COMSOL Multiphysics \\[4pt]
+    \textbf{Microcontrollers Architectures} \\
+    AVR, ARM
+    \\[4pt]
+    \textbf{Lab \& Fabrication} \\
+    VNA, soldering, prototyping, Autodesk Fusion 360, 3D printing
+\end{minipage}
 
 \section{languages}
 \begin{tabular}{l l}
-    \textbf{Italian}& Native speaker\\
-    \textbf{English}& C2 level\\
-    \textbf{German}& B2 level\\
-    \textbf{French}& A2 level
+    \textbf{Italian} & Native speaker \\
+    \textbf{English} & C2 level (Cambridge Assessment English, overall score of 200 equivalent to IELTS 8.5, 2020) \\
+    \textbf{German} & B2 level (CLI University of Pisa, 2022) \\
+    \textbf{French} & A2 level
 \end{tabular}
 
-\section{projects}
+
+\section{Grad Course Projects}
+
+\entry{\href{https://github.com/leonardobove/spacefibre_pll}{SpaceFibre PLL}}{University of Pisa, \textit{Wireless Integrated Circuits}, Prof. Daniele Rossi}{Pisa, Italy}{Sep. 2022 -- Sep. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item \textbf{\href{https://github.com/leonardobove/spacefiber_pll}{SpaceFibre PLL}}: Model and ADS simulation of a SpaceFibre compatible 6.25GHz PLL, implemented using the SG25H4 0.25 \(\mu\)m SiGe BiCMOS technology from GlobalFoundries.
-    \item \textbf{\href{https://github.com/leonardobove/handwritten_digit_recognition}{Handwritten Digit Recognition}}: An handwritten digit recognition system based on a neural network implemented on Altera DE10-Lite board (Altera MAX10 10M50DAF484C7G FPGA)
-    \item \textbf{\href{https://github.com/leonardobove/dual_axis_accelerometer}{Dual Axis Accelerometer}}: COMSOL simulation of a dual-axis MEMS accelerometer with T-shape beams.
-    \item \textbf{\href{https://github.com/leonardobove/rubiks_cube_automatic_solver/tree/main}{Rubik's Cube Automatic Solver}}: A servo motor actuated Rubik cube solver robot, controlled by S32K144EVB. Developed using Simulink MBD
+    \item Model and ADS simulation of a SpaceFibre compatible 6.25GHz PLL, implemented using the SG25H4 0.25 \(\mu\)m SiGe BiCMOS technology from GlobalFoundries.
+    \item Study of the system stability and performance.
+\end{itemize}
+
+\smallskip
+
+\entry{\href{https://github.com/leonardobove/handwritten_digit_recognition}{Handwritten Digit Recognition}}{University of Pisa, \textit{Digital System Design}, Prof. Roberto Saletti}{Pisa, Italy}{Jan. 2025 -- Feb. 2025}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+    \item An handwritten digit recognition system based on a neural network implemented on Altera DE10-Lite board (Altera MAX10 10M50DAF484C7G FPGA).
+    \item Digital twin implemented in Python for training and quantization.
+    \item Custom Verilog driver for touchscreen and visualization on Terasic LT24 screen.
+\end{itemize}
+
+\smallskip
+
+\entry{\href{https://github.com/leonardobove/dual_axis_accelerometer}{Dual Axis Accelerometer}}{University of Pisa, \textit{Sensor and Microsystem Design}, Prof. Massimo Piotto}{Pisa, Italy}{Dec. 2024 -- Jan. 2025}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+    \item COMSOL simulation of a dual-axis MEMS accelerometer with T-shape beams.
+    \item Study of the device performance and application range, compared to the lumped elements schematic model.
+\end{itemize}
+
+\smallskip
+
+\entry{\href{https://github.com/leonardobove/rubiks_cube_automatic_solver/tree/main}{Rubik's Cube Automatic Solver}}{University of Pisa, \textit{Mechatronic Systems Design}, Prof. Roberto Di Rienzo}{Pisa, Italy}{Nov. 2024 -- Dec. 2024}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+    \item A servo motor actuated Rubik cube solver robot, controlled by S32K144EVB
+    \item Developed using Simulink Model-Based Design.
+    \item Digital twin of the overall system.
 \end{itemize}
 
 \section{other skills}
