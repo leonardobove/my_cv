@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
 \usepackage[english]{babel}
 %\usepackage{cmbright}
 \usepackage{enumitem}
@@ -15,7 +15,7 @@
 \hypersetup{colorlinks, urlcolor=black, linkcolor=black}
 
 % Geometry
-\geometry{hmargin=1.75cm, vmargin=0.9cm}
+\geometry{hmargin=1.9cm, vmargin=1.9cm}
 \columnratio{0.65, 0.35}
 \setlength\columnsep{0.05\textwidth}
 \setlength\parindent{0pt}
@@ -30,6 +30,7 @@
 %\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
 \newcommand{\heading}[2]{\centering{\Huge #1}\\\smallskip{\large{#2}}}
 \newcommand{\entry}[4]{{{\textbf{#1}}} \hfill #3 \\ #2 \hfill #4}
+\newcommand{\noboldentry}[4]{{{#1}} \hfill #3 \\ #2 \hfill #4}
 \newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
 
 \begin{document}
@@ -39,20 +40,21 @@
 \begin{paracol}{2}
 
 % Name & headline
-\heading{Leonardo Bove}{Graduate Student in\\Electronic Engineering}
+\heading{Leonardo Bove}{Graduate Research Fellow in\\Quantum \& Electronic Engineering}
 
 \switchcolumn
 
 % Identity card
 \vspace{0.01\textheight}
 \begin{supertabular}{ll}
+  \footnotesize\faMapPin & Pisa, Italy \\
   \footnotesize\faPhone & +39 338 449 0477 \\
   \footnotesize\faEnvelope & \href{mailto:leonardo.bove01@gmail.com}{leonardo.bove01@gmail.com} \\
   \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/leonardo-bove-86a1481b3/}{leonardobove} \\
    \footnotesize\faGithub & \href{https://github.com/leonardobove}{leonardobove} \\
 \end{supertabular}
 
-\smallskip
+%\smallskip
 \end{paracol}
 
 \section{education}
@@ -61,83 +63,80 @@
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Specialization: Embedded Systems \& Mechatronics
   \item Thesis title: \textit{Superconducting qubit readout and control system based on FPGA and development of a pulse sequencer}
-  \item Attended Courses:
-    \begin{itemize}[noitemsep]
-        \item RF Circuit Design
-        \item Microelectronic Fabrication Technologies
-        \item Solid State Physics
-        \item Digital System Design
-        \item Embedded Systems
-        \item Sensor And Microsystem Design
-        \item Analog Integrated Circuit Design
-    \end{itemize}
-   \item Degree grade: 110/110 with Honors
+  \item Thesis advisors: Professor Massimo Macucci, Professor Stefano Di Pascoli, Dr. David Van Zanten
+  \item Relevant attended courses: \textit{Wireless Integrated Circuits, Telecommunications, Digital System Design (FPGA), Embedded Systems}
+   \item Degree grade: 110/110 \textit{summa cum laude}
    \item Overall GPA: 4.0/4.0
 \end{itemize}
 
-\smallskip
+%\smallskip
 
 \entry{B.Sc. in Electronic Engineering}{University of Pisa}{Pisa, Italy}{Sep. 2020 -- Jul. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Thesis title: \textit{Dispersive Readout of  the Transmon Qubit}
-  \item Degree grade: 110/110 with Honors
+  \item Thesis advisor: Professor Massimo Macucci
+  \item Relevant attended courses: \textit{Solid State Electronics, Programming Languages and Computer Architecture, Programmable Electronic Systems, Computer Systems}
+  \item Degree grade: 110/110 \textit{summa cum laude}
   \item Overall GPA: 4.0/4.0
 
 \end{itemize}
 
 \section{research experience}
 
-\entry{Quantum Characterization Graduate Researcher}{Department of Information Engineering, University of Pisa}{Pisa, Italy}{Sep. 2025 -- Present}
+\entry{Graduate Research Fellow in Quantum \& Electronic Engineering}{Department of Information Engineering, University of Pisa}{Pisa, Italy}{Sep. 2025 -- Present}
+
+\smallskip
+Recipient of a 3-month research fellowship titled "Measurement of relaxation and decoherence times in superconducting qubits".
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Characterization of multiple qubits using frequency multiplexing techniques.
-    \item Software and hardware management of the dilution refrigerator of the laboratory.
-    \item Microwave path engineering: sizing and selection of the components of the system; characterization of the system through RF instrumentation (VNA, spectrum analyzer).
-    \item FPGA development for control and readout purposes.
-    \item Setup of infrastructure for remote qubit characterization (\textit{JupyterLab server}).
+	\item Characterization of multiple qubits using frequency multiplexing strategies.
+	\item Management of the laboratory's dilution refrigerator infrastructure.
+	\item Microwave path engineering: component sizing and selection, and system characterization using RF instrumentation (VNA, spectrum analyzer).
+	\item FPGA development for qubit control and readout.
+	\item Established a remote-access infrastructure for qubit experiments (\textit{JupyterLab server}).
 \end{itemize}
 
 \entry{Master Thesis Project}{SQMS, Fermilab}{Batavia, IL, USA}{May 2025 -- Jul. 2025}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Development of \textit{\href{https://github.com/leonardobove/qpcb}{QPCB}}, a custom pulse frequency up/down-conversion board. Microwave EM circuit analysis (\textit{ADS Keysight})
-    \item Development of Qubase, a high-level qubit pulse sequencer in Python, that relies on the open-source \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} board, a Xilinx FPGA based real-time RF signal generator and readout system, developed at SQMS, Fermilab.
-    \item Application of Qubase in 2D and 3D superconducting qubit characterization and other advanced research purposes.
-    \item Automation of the calibration process.
+	\item Designed and analyzed \textit{\href{https://github.com/leonardobove/qpcb}{QPCB}}, a custom pulse frequency conversion board, using microwave EM simulations (\textit{ADS Keysight}).
+	\item Engineered \textit{Qubase}, a Python-based high-level pulse sequencer for the \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} FPGA platform.
+	\item Applied Qubase to characterize 2D and 3D superconducting qubits and support advanced quantum experiments.
+	\item Automated calibration workflows for high-throughput measurements.
 \end{itemize}
 
-\section{industry experience}
+\section{professional experience}
 
 \entry{Chief Technology Officer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{Sep. 2023 -- Sep. 2024}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Lead the development of the EV (Electric Vehicle) car of the University of Pisa (\textit{Electronics \& Software Divisions}).
-    \item Final approval of projects.
-    \item Main high voltage battery manager.
-    \item Manager of the GitLab server of the Team.
-    \item CI automation manager; PR and issues reviewer.
-    \item Team building and teamwork promoter.
-    \item Management of people's activities and trips.
+	\item Directed the development of the University of Pisa's EV race car (\textit{Electronics \& Software Divisions}).
+	\item Approved and validated engineering projects.
+	\item Oversaw high-voltage battery systems.
+	\item Administered and maintained the team's GitLab server.
+	\item Coordinated CI pipelines; reviewed pull requests and issue workflows.
+	\item Fostered team cohesion through structured team-building initiatives.
+	\item Organized personnel logistics and supervised technical activities.
 \end{itemize}
 
-\smallskip
+%\smallskip
 
 \entry{Embedded Software Developer}{Sintonica s.r.l.}{Navacchio (PI), Italy}{May 2023 -- Sep. 2023}
-\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Develop the driver firmware for TFT LCD displays for a custom embedded OS on Infineon PSoC ARM microcontroller
-    \item Layout of the new release of the company's development kit PCB, based on Cypress and nRF PSoC.
+\begin{itemize}[noitemsep,leftmargin=3.5mm,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+	\item Developed firmware drivers for TFT LCD displays on a custom embedded OS using Infineon PSoC ARM microcontrollers.
+	\item Contributed to the layout and enhancement of the company’s development kit PCB, integrating Cypress and nRF PSoC platforms.
 \end{itemize}
 
-\smallskip
+%\smallskip
 
 \entry{PCB Designer and Embedded System Developer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{Sep. 2022 -- Sep. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Lead the development of the embedded software of the mounted PCB boards
-    \item Develop part of the Vehicle Control Unit software, based on the FreeRTOS real-time OS
-    \item Develop a bootloader via CAN bus, ARM and AVR compatible
-    \item Unit and integration testing of firmware
+	\item Led development of embedded software for onboard PCB systems.
+	\item Implemented components of the Vehicle Control Unit using the FreeRTOS real-time OS.
+	\item Engineered a multi-architecture bootloader (ARM/AVR) with CAN bus support.
+	\item Performed unit and integration testing of firmware modules.
 \end{itemize}
 
 \section{skills}
 \begin{minipage}[t]{0.48\textwidth}
-    \textbf{Development Tools \& OS} \\
+    \textbf{Software Development Tools \& OS} \\
     Git, Linux, Windows
     \\[4pt]
     \textbf{Programming Languages} \\
@@ -160,6 +159,9 @@
     \textbf{Microcontrollers Architectures} \\
     AVR, ARM
     \\[4pt]
+    \textbf{PCB Design} \\
+    KiCad, Altium
+    \\[4pt]
     \textbf{Lab \& Fabrication} \\
     VNA, soldering, prototyping, Autodesk Fusion 360, 3D printing
 \end{minipage}
@@ -167,51 +169,59 @@
 \section{languages}
 \begin{tabular}{l l}
     \textbf{Italian} & Native speaker \\
-    \textbf{English} & C2 level (Cambridge Assessment English, overall score of 200 equivalent to IELTS 8.5, 2020) \\
-    \textbf{German} & B2 level (CLI University of Pisa, 2022) \\
+    \textbf{English} & C2 level (\textit{Cambridge Assessment English}, overall score of 200 equivalent to IELTS 8.5, 2020) \\
+    \textbf{German} & B2 level (Linguistic Center \textit{CLI} University of Pisa, 2022) \\
     \textbf{French} & A2 level
 \end{tabular}
 
+\section{Invited Talks \& Presentations}
+"Superconducting qubit readout and control system based on FPGA and development of a pulse sequencer", Quantum Device Lab, Department of Physics, ETH Zürich, Zürich, Switzerland, July 23, 2025.
 
 \section{Grad Course Projects}
 
-\entry{\href{https://github.com/leonardobove/spacefibre_pll}{SpaceFibre PLL}}{University of Pisa, \textit{Wireless Integrated Circuits}, Prof. Daniele Rossi}{Pisa, Italy}{Sep. 2022 -- Sep. 2023}
+\entry{\href{https://github.com/leonardobove/spacefibre_pll}{SpaceFibre PLL}}{University of Pisa, \textit{Wireless Integrated Circuits}, Professor Daniele Rossi}{Pisa, Italy}{Sep. 2022 -- Sep. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item Model and ADS simulation of a SpaceFibre compatible 6.25GHz PLL, implemented using the SG25H4 0.25 \(\mu\)m SiGe BiCMOS technology from GlobalFoundries.
-    \item Study of the system stability and performance.
+    \item Modeled and simulated a SpaceFibre-compatible 6.25GHz PLL, using the SG25H4 0.25 \(\mu\)m SiGe BiCMOS technology.
+    \item Evaluated system stability and performance metrics.
 \end{itemize}
+
+%\smallskip
+
+\entry{\href{https://github.com/leonardobove/handwritten_digit_recognition}{Handwritten Digit Recognition}}{University of Pisa, \textit{Digital System Design}, Professor Roberto Saletti}{Pisa, Italy}{Jan. 2025 -- Feb. 2025}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+	\item Engineered a neural-network–based handwritten digit recognizer on the Altera DE10-Lite (MAX10 FPGA).
+	\item Built a Python digital twin for training and quantization.
+	\item Implemented custom Verilog drivers for touchscreen control and LT24 visualization.
+\end{itemize}
+
+%\smallskip
+
+\entry{\href{https://github.com/leonardobove/dual_axis_accelerometer}{Dual Axis Accelerometer}}{University of Pisa, \textit{Sensor and Microsystem Design}, Professor Massimo Piotto}{Pisa, Italy}{Dec. 2024 -- Jan. 2025}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+	\item Simulated a dual-axis MEMS accelerometer with T-shaped beams using COMSOL.
+	\item Analyzed device performance and application range, benchmarking against lumped-element models.
+\end{itemize}
+
+%\smallskip
+
+\entry{\href{https://github.com/leonardobove/rubiks_cube_automatic_solver/tree/main}{Rubik's Cube Automatic Solver}}{University of Pisa, \textit{Mechatronic Systems Design}, Professor Roberto Di Rienzo}{Pisa, Italy}{Nov. 2024 -- Dec. 2024}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+	\item Designed a servo-actuated Rubik's cube solver robot controlled by an S32K144EVB.
+	\item Developed the system using Simulink Model-Based Design.
+	\item Built a digital twin of the complete robotic system.
+\end{itemize}
+
+\section{Honors \& Awards}
+
+\entry{Industry 5.0 Excellence Learning Path}{FoReLab project, University of Pisa}{2025}{} \\
+Specialized training program designed to develop advanced skills in next-generation industrial technologies by integrating research, innovation, and hands-on projects aligned with the principles of Industry 5.0.
 
 \smallskip
+\entry{Industry 4.0 Learning Path}{University of Pisa}{2025}{} \\
+Training program that provides practical and theoretical skills in digital manufacturing, smart automation, and modern industrial technologies aligned with the principles of Industry 4.0.
 
-\entry{\href{https://github.com/leonardobove/handwritten_digit_recognition}{Handwritten Digit Recognition}}{University of Pisa, \textit{Digital System Design}, Prof. Roberto Saletti}{Pisa, Italy}{Jan. 2025 -- Feb. 2025}
-\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item An handwritten digit recognition system based on a neural network implemented on Altera DE10-Lite board (Altera MAX10 10M50DAF484C7G FPGA).
-    \item Digital twin implemented in Python for training and quantization.
-    \item Custom Verilog driver for touchscreen and visualization on Terasic LT24 screen.
-\end{itemize}
-
-\smallskip
-
-\entry{\href{https://github.com/leonardobove/dual_axis_accelerometer}{Dual Axis Accelerometer}}{University of Pisa, \textit{Sensor and Microsystem Design}, Prof. Massimo Piotto}{Pisa, Italy}{Dec. 2024 -- Jan. 2025}
-\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item COMSOL simulation of a dual-axis MEMS accelerometer with T-shape beams.
-    \item Study of the device performance and application range, compared to the lumped elements schematic model.
-\end{itemize}
-
-\smallskip
-
-\entry{\href{https://github.com/leonardobove/rubiks_cube_automatic_solver/tree/main}{Rubik's Cube Automatic Solver}}{University of Pisa, \textit{Mechatronic Systems Design}, Prof. Roberto Di Rienzo}{Pisa, Italy}{Nov. 2024 -- Dec. 2024}
-\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-    \item A servo motor actuated Rubik cube solver robot, controlled by S32K144EVB
-    \item Developed using Simulink Model-Based Design.
-    \item Digital twin of the overall system.
-\end{itemize}
-
-\section{other skills}
-\begin{tabular}{l l}
-    \textbf{Driving license}& B license\\
-    \textbf{Music}& Violin\\
-\end{tabular}
-\vspace*{\fill}
+\section{Extracurricular activities}
+\entry{Violin}{"Hans Werner Henze" Institute of Music}{Montepulciano, Italy}{2009 -- 2021} \\
+Individual lessons and orchestral performances with the \textit{Poliziana Orchestra} at the annual \textit{Cantiere Internazionale d'Arte di Montepulciano}, in addition to periodic symphonic music concerts. Recipient of three merit-based scholarships awarded by the \textit{Cantiere Internazionale d'Arte di Montepulciano} foundation.
 
 \end{document}
