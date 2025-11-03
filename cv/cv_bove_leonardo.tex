@@ -62,9 +62,9 @@
 \entry{M.Sc. in Electronic Engineering}{University of Pisa}{Pisa, Italy}{Sep. 2023 -- Oct. 2025}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
   \item Specialization: Embedded Systems \& Mechatronics
-  \item Thesis title: \textit{Superconducting qubit readout and control system based on FPGA and development of a pulse sequencer}
+  \item Thesis title: "\textit{Superconducting qubit readout and control system based on FPGA and development of a pulse sequencer}"
   \item Thesis advisors: Professor Massimo Macucci, Professor Stefano Di Pascoli, Dr. David Van Zanten
-  \item Relevant attended courses: \textit{Wireless Integrated Circuits, Telecommunications, Digital System Design (FPGA), Embedded Systems}
+  \item Relevant attended courses: \textit{Wireless Integrated Circuits, Telecommunications, Digital System Design} (FPGA), \textit{Embedded Systems} (analysis and design of the low-level computer architecture for embedded applications)
    \item Degree grade: 110/110 \textit{summa cum laude}
    \item Overall GPA: 4.0/4.0
 \end{itemize}
@@ -73,9 +73,9 @@
 
 \entry{B.Sc. in Electronic Engineering}{University of Pisa}{Pisa, Italy}{Sep. 2020 -- Jul. 2023}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-  \item Thesis title: \textit{Dispersive Readout of  the Transmon Qubit}
+  \item Thesis title: "\textit{Dispersive readout of the Transmon qubit}"
   \item Thesis advisor: Professor Massimo Macucci
-  \item Relevant attended courses: \textit{Solid State Electronics, Programming Languages and Computer Architecture, Programmable Electronic Systems, Computer Systems}
+  \item Relevant attended courses: \textit{Programming Languages and Computer Architecture} (C/C++, Object-oriented programming, fundamentals of data structures and computational complexity), \textit{Programmable Electronic Systems} (C and Assembly for microcontrollers), \textit{Computer Systems} (UNIX operating system, kernel and shell usage, C for UNIX, computer networks and fundamentals of computer security), \textit{Random Signals} (), \textit{Solid State Electronics}
   \item Degree grade: 110/110 \textit{summa cum laude}
   \item Overall GPA: 4.0/4.0
 
@@ -86,20 +86,22 @@
 \entry{Graduate Research Fellow in Quantum \& Electronic Engineering}{Department of Information Engineering, University of Pisa}{Pisa, Italy}{Sep. 2025 -- Present}
 
 \smallskip
-Recipient of a 3-month research fellowship titled "Measurement of relaxation and decoherence times in superconducting qubits".
+Recipient of a 3-month research fellowship titled "\textit{Measurement of relaxation and decoherence times in superconducting qubits}".
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-	\item Characterization of multiple qubits using frequency multiplexing strategies.
+	\item Characterization of multiple qubits using frequency multiplexing strategies. Performed the first qubit measurements ever conducted within the engineering department.
 	\item Management of the laboratory's dilution refrigerator infrastructure.
-	\item Microwave path engineering: component sizing and selection, and system characterization using RF instrumentation (VNA, spectrum analyzer).
-	\item FPGA development for qubit control and readout.
+	\item Microwave path engineering: component sizing and selection, and system characterization using RF instrumentation (VNA, spectrum analyzer). Maximization the available SNR in the readout chain without relying on quantum-limited amplifiers.
+	\item Developed FPGA-based qubit control and readout using the \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} platform, adapting it to our experimental setup. Achieved comparable performance to off-the-shelf commercial qubit controllers while significantly reducing hardware costs.
 	\item Established a remote-access infrastructure for qubit experiments (\textit{JupyterLab server}).
 \end{itemize}
+
+\newpage
 
 \entry{Master Thesis Project}{SQMS, Fermilab}{Batavia, IL, USA}{May 2025 -- Jul. 2025}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
 	\item Designed and analyzed \textit{\href{https://github.com/leonardobove/qpcb}{QPCB}}, a custom pulse frequency conversion board, using microwave EM simulations (\textit{ADS Keysight}).
-	\item Engineered \textit{Qubase}, a Python-based high-level pulse sequencer for the \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} FPGA platform.
-	\item Applied Qubase to characterize 2D and 3D superconducting qubits and support advanced quantum experiments.
+	\item Engineered \textit{Qubase}, a high-level Python pulse sequencer for the \textit{\href{https://github.com/openquantumhardware/qick}{QICK}} FPGA platform, leveraging \textit{rustworkx} for sequence graph analysis.
+	\item Applied Qubase to characterize 2D and 3D superconducting  qubits and support advanced quantum experiments (e.g. parallel fast-decay detection sequence).
 	\item Automated calibration workflows for high-throughput measurements.
 \end{itemize}
 
@@ -107,11 +109,11 @@ Recipient of a 3-month research fellowship titled "Measurement of relaxation and
 
 \entry{Chief Technology Officer}{E-Team Squadra Corse, FSAE team}{Pisa, Italy}{Sep. 2023 -- Sep. 2024}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
-	\item Directed the development of the University of Pisa's EV race car (\textit{Electronics \& Software Divisions}).
+	\item Directed the development of the University of Pisa's EV race car (\textit{Electronics \& Software Divisions}) for the 2023--2024 season.
+	\item Achieved a significant performance improvement at Formula Student Germany 2024, finishing 11 positions higher in the overall ranking compared to the previous year, and ranking as the only Italian team to successfully complete the endurance event.
 	\item Approved and validated engineering projects.
 	\item Oversaw high-voltage battery systems.
-	\item Administered and maintained the team's GitLab server.
-	\item Coordinated CI pipelines; reviewed pull requests and issue workflows.
+	\item Administered and maintained the team's GitLab server. Coordinated CI pipelines. Reviewed pull requests and issue workflows.
 	\item Fostered team cohesion through structured team-building initiatives.
 	\item Organized personnel logistics and supervised technical activities.
 \end{itemize}
@@ -130,8 +132,9 @@ Recipient of a 3-month research fellowship titled "Measurement of relaxation and
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
 	\item Led development of embedded software for onboard PCB systems.
 	\item Implemented components of the Vehicle Control Unit using the FreeRTOS real-time OS.
-	\item Engineered a multi-architecture bootloader (ARM/AVR) with CAN bus support.
-	\item Performed unit and integration testing of firmware modules.
+	\item Engineered a multi-architecture bootloader (ARM/AVR) with CAN bus support, enabling rapid firmware updates for inaccessible microcontrollers in time-critical scenarios.
+	
+	\item Conducted unit and integration testing of firmware modules. Co-developed a virtualization framework enabling \textit{Model-in-the-loop} and \textit{Software-in-the-loop} testing of firmware prior to deployment on physical hardware.
 \end{itemize}
 
 \section{skills}
@@ -195,7 +198,7 @@ Recipient of a 3-month research fellowship titled "Measurement of relaxation and
 \end{itemize}
 
 %\smallskip
-
+\newpage
 \entry{\href{https://github.com/leonardobove/dual_axis_accelerometer}{Dual Axis Accelerometer}}{University of Pisa, \textit{Sensor and Microsystem Design}, Professor Massimo Piotto}{Pisa, Italy}{Dec. 2024 -- Jan. 2025}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
 	\item Simulated a dual-axis MEMS accelerometer with T-shaped beams using COMSOL.
@@ -211,6 +214,7 @@ Recipient of a 3-month research fellowship titled "Measurement of relaxation and
 	\item Built a digital twin of the complete robotic system.
 \end{itemize}
 
+
 \section{Honors \& Awards}
 
 \entry{Industry 5.0 Excellence Learning Path}{FoReLab project, University of Pisa}{2025}{} \\
@@ -221,7 +225,20 @@ Specialized training program designed to develop advanced skills in next-generat
 Training program that provides practical and theoretical skills in digital manufacturing, smart automation, and modern industrial technologies aligned with the principles of Industry 4.0.
 
 \section{Extracurricular activities}
+\entry{Private Tutoring}{}{Pisa, Italy}{2023 -- 2025} \\
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+	\item Conducted weekly one-to-one tutoring sessions for more than 5 high school students.
+	\item Provided support across multiple subjects, including Computer Science (e.g., graph theory, computer networks, Java), Electronics (digital and analog circuits), Physics, and Mathematics.
+	\item Achieved an average 30\% improvement in students' grades.
+\end{itemize}
+
+
+\smallskip
+
 \entry{Violin}{"Hans Werner Henze" Institute of Music}{Montepulciano, Italy}{2009 -- 2021} \\
-Individual lessons and orchestral performances with the \textit{Poliziana Orchestra} at the annual \textit{Cantiere Internazionale d'Arte di Montepulciano}, in addition to periodic symphonic music concerts. Recipient of three merit-based scholarships awarded by the \textit{Cantiere Internazionale d'Arte di Montepulciano} foundation.
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+	\item Individual lessons and orchestral performances with the \textit{Poliziana Orchestra} at the annual \textit{Cantiere Internazionale d'Arte di Montepulciano}, in addition to periodic symphonic music concerts. 
+	\item Recipient of three merit-based scholarships awarded by the \textit{Cantiere Internazionale d'Arte di Montepulciano} foundation.
+\end{itemize}
 
 \end{document}
