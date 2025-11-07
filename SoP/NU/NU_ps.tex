@@ -6,21 +6,22 @@
 % https://github.com/DaizeDong/Easier-PS-and-SoP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass{easier_ps}
+\documentclass{easier_sop}
 
 % --- ESSAY DISPLAY SETTINGS ---
+\SetDocumentTitle{Personal Statement}
 \SetStudentName{Leonardo Bove}           % Your name
 \SetProgramName{PhD in Computer Science}           % Program you're applying for
 \SetUniversityName{Northwestern University}     % University name
 \SetUniversityAbbr{\GetUniversityName} % University abbreviation (default as the university name if not set)
 
-% --- CONTENT INPUT FILES ---
-\SetBaseContentPath{content/example_base}      % Path to the input file (base)
-\SetUniContentPath{content/example_uni} % Path to the input file (university)
-
 % CONTENT
 \begin{document}
 	\thispagestyle{firstpageheader} % Use the expanded header on the first page
 	
-	hhhh
+	hhh
+	
+	\newpage
+	\nocite{*} % show all the references
+	%\bibliography{ref}
 \end{document}
