@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SPDX-License-Identifier: BSD-3-Clause
+% Copyright (c) 2020, Salman Ahmad Faris
+% https://github.com/salfaris/EasyPS
+% Copyright (c) 2024, Daize Dong
+% https://github.com/DaizeDong/Easier-PS-and-SoP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{easier_sop_original}
+
+% --- ESSAY DISPLAY SETTINGS ---
+\SetTitle{Personal Statement}
+\SetStudentName{Leonardo Bove}           % Your name
+\SetProgramName{PhD in Electrical Engineering}           % Program you're applying for
+\SetUniversityName{Illinois Institute of Technology}     % University name
+\SetUniversityAbbr{\GetUniversityName} % University abbreviation (default as the university name if not set)
+
+% CONTENT
+\begin{document}
+	\thispagestyle{firstpageheader} % Use the expanded header on the first page
+
+	I have always been fascinated by how hardware enables computation. This interest led me to a technical high school in Italy specializing in Electronics and later to a B.Sc.\ in Electronic Engineering at the University of Pisa, where I finally understood what was happening beneath my fingers as I typed on a keyboard. Learning about Moore's law, and its eventual limits, made me wonder whether the evolution of classical computing was nearing its end. Discovering that quantum computing was a real and rapidly developing field, rather than a distant concept, was incredibly exciting and made me feel as though we are witnessing a revolution comparable to the era of the first electronic computers.
+	
+	After this discovery, I quickly realized that I wanted to contribute to this scientific and engineering challenge and help make quantum computers useful for humanity. As with the classical computing systems we rely on today, their transformative impact emerged only after widespread democratization. Achieving this for quantum technologies will require not only advances in qubit performance from physicists, but also the essential contributions of computer scientists and engineers in building the electrical and software infrastructure that makes these systems accessible and usable.
+	
+	This is why my academic interests now focus on developing real-time architectures and signal-processing tools that can support scalable quantum computing, beginning with the Noisy Intermediate-Scale Quantum devices available today. While advances in qubit fabrication continue to improve coherence times and gate fidelities, true progress toward fault-tolerant quantum computing will also depend on sophisticated classical systems for measurement, control, and error correction. I am particularly interested in machine-learning-based quantum error-correction decoders implemented on FPGAs, where the parallelism and reconfigurability of hardware can dramatically reduce decoding latency and enable adaptive models suited for realistic noise environments.
+	
+	These challenges naturally align with the research directions of Professor Jafar Saniie at Illinois Institute of Technology. His work in embedded signal processing, neural network architectures, and system-on-chip design provides a strong foundation for exploring FPGA-accelerated quantum control pipelines. Moreover, recent efforts in his lab involving adaptive FPGA-based filtering for qubit readout demonstrate a growing engagement with the kinds of quantum-related signal-processing problems that I aim to address. I am eager to contribute to these research directions and help develop the hardware-aware methodologies needed to enable reliable and scalable quantum computing.
+	
+	From my perspective, these research challenges demand a comprehensive understanding of the entire quantum-classical stack. My background in electronic engineering, combined with coursework in software and computer engineering and focused work in quantum technologies, has prepared me well for this. As Chief Technology Officer of my university's Formula SAE team, I oversaw both hardware and software divisions, an experience that strengthened my ability to integrate complex embedded systems and lead multidisciplinary engineering efforts. I discovered quantum computing at the end of my Bachelor's degree and dedicated my thesis to the control and readout of a superconducting transmon qubit, independently studying quantum computation theory and algorithms. This project highlighted the decisive role of classical hardware and digital signal processing in enabling high-fidelity quantum operations, motivating me to pursue a Master's degree in Electronic Engineering to deepen my expertise in qubit control systems.
+	
+	During my thesis with the SQMS Center at Fermilab, I assembled an FPGA-based controller using QICK and developed Qubase, a high-level Python pulse sequencer that generates hardware-specific instructions from hardware-agnostic quantum experiments. Using this system, I implemented multi-qubit pulse sequences for fast decay detection of T1 relaxation times on a frequency-multiplexed device, although the same control programs could be adapted to architectures with individually addressed qubits. These experiences further solidified my interest in building the middleware that connects high-level abstractions with low-level qubit control and in designing efficient embedded architectures for real-time signal processing in quantum systems.
+	
+	While preparing this application, I have been extending these tools as a graduate research fellow in my advisor's laboratory in Pisa. I built the hardware and software infrastructure that now makes our engineering school's first superconducting quantum processor remotely accessible through the Qubase interface. I am using this platform to perform calibration routines and run physically meaningful qubit experiments. This ongoing work continues to reinforce my commitment to improving the reliability, automation, and scalability of quantum systems through well-designed classical control hardware and intelligent signal processing.
+	
+	I am confident that pursuing a PhD in Electrical Engineering at Illinois Institute of Technology is the ideal next step in this path. Chicago is rapidly becoming a major hub for quantum technologies, supported by initiatives such as the Illinois Quantum and Microelectronics Park and the Chicago Quantum Exchange, and IIT sits at the center of this ecosystem. More importantly, my research interests align strongly with the work of Professor Jafar Saniie, whose contributions to ultrasonic signal processing, embedded machine learning, and system-on-chip design provide a powerful foundation for addressing low-latency, FPGA-accelerated quantum control problems. Recent research in the ECASP lab on FPGA-based adaptive filtering for qubit readout demonstrates an emerging engagement with quantum signal analysis that resonates deeply with my goals. I am eager to contribute to this environment and help develop the embedded architectures and intelligent decoding methods required for practical, fault-tolerant quantum computing.
+	
+	In conclusion, I am confident that my academic background in electronics, embedded systems, and quantum control provides a strong foundation for doctoral research in this field. I believe that the PhD program in Electrical Engineering at Illinois Institute of Technology will challenge me intellectually and offer the ideal environment to develop as a researcher. Under the guidance of Professor Jafar Saniie, whose work in signal processing, machine learning, and hardware-software co-design closely aligns with my interests, I am eager to contribute to the development of real-time, hardware-accelerated techniques that will advance the reliability and scalability of quantum computing.
+	
+	\newpage
+	\nocite{*} % show all the references
+	%\bibliography{ref}
+\end{document}
